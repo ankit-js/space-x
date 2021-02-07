@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Sidebar from "../../components/noMatch/sidebar/Sidebar";
-import MissionsInfoComponent from "../../components/noMatch/missionInfo/MissionInfo";
+import Sidebar from "../../components/sidebar/Sidebar";
+import MissionsInfoComponent from "../../components/missionInfo/MissionInfo";
 import { fetchInitialLaunchData, fetchSpaceXLaunchesFilteredData } from '../../service/service'
 
 class Home extends Component {

@@ -1,5 +1,5 @@
 import React from "react";
-import { yearFilterData } from "../../../utils/meta"
+import { yearFilterData } from "../../utils/meta"
 
 const SideBarComponent = ({
   _handleFilters,

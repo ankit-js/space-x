@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+.mainWrapper {
+  display: flex;
+  justify-content: start;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.missionWrapper {
+  width: 82%;
+}
+
+.sidebar {
+  padding: 10px 15px;
+  background: #fff;
+  width: 18%;
+  margin-top: 10px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+}
+
+.sidebarTitle {
+  text-decoration: underline;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.sidebarList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebarList li + li {
+  margin-top: 10px;
+}
+
+.sidebarList li span {
+  background: #c4e09b;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #000;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarList li span.active {
+  background: #79bb00;
+}
+
+.card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.cardImage img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.missionWrapper {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 25%;
+  padding: 10px;
+}
+
+.column .card {
+  height: 490px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  color: #4169e1;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contentList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.contentList li + li {
+  margin-top: 6px;
+}
+
+.contentList .content {
+  font-weight: 600;
+  font-size: 16px;
+  color: #4169e1;
+}
+
+.contentList .missionIdWrap {
+  display: contents;
+}
+
+.contentList .missionIdWrap .missionIdList {
+  max-height: 95px;
+  overflow-y: auto;
+}
+
+.contentList .missionIdWrap .missionIdList li {
+  display: flex;
+  justify-content: start;
+}
+
+.contentList .missionIdWrap .missionIdList li .content {
+  margin-left: 20px;
+}
+
+.circle {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #4169e1;
+  border: 2px solid #4169e1;
+}
+
+.mainHeading {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.cardImage {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+}
+
+.cardImage img {
+  max-width: 100%;
+}
+
+.emptyMission {
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* ========= Custom Scroll Bar ===================== */
+.missionIdList::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.missionIdList::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+.missionIdList::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.missionIdList::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* ========= Custom Scroll Bar ===================== */
+
+@media (max-width: 1024px) {
+  .cardImage {
+    height: 200px;
+  }
+
+  .mainWrapper {
+    display: block;
+    justify-content: start;
+  }
+
+  .missionWrapper,
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .column {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .cardImage {
+    height: 200px;
+  }
+
+  .mainWrapper {
+    display: block;
+    justify-content: start;
+  }
+
+  .missionWrapper,
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .column {
+    width: 100%;
+  }
+}

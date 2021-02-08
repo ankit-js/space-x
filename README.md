@@ -25,5 +25,3 @@
 
 - Project deploy to heroku.
 - deployed url: https://sapcex-app.herokuapp.com/
-
-![Alt text](http://https://github.com/ankit-js/space-x/edit/main/Screenshot (151).png "LightHouse Screen shot")

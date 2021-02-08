@@ -215,14 +215,18 @@ ul {
   }
 
   .mainWrapper {
-    display: block;
+    display: flex;
     justify-content: start;
   }
 
   .missionWrapper,
   .sidebar {
-    width: 100%;
+    width: 25%;
     margin-bottom: 20px;
+  }
+  
+  .missionWrapper {
+    width: 75%;
   }
 
   .column {

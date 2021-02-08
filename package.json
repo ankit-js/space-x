@@ -1,0 +1,67 @@
+{
+  "name": "rrssr-v4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack && nodemon server.js",
+    "postinstall": "webpack -p",
+    "start": "node server.js",
+    "test": "react-scripts test"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-transform-arrow-functions",
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/plugin-transform-arrow-functions": "^7.12.1",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "8.1.0",
+    "css-loader": "^5.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.1",
+    "file-loader": "^6.2.0",
+    "nodemon": "^2.0.2",
+    "react-test-renderer": "^17.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-loader-spinner": "^4.0.0",
+    "react-router-dom": "4.4.0-beta.8",
+    "react-scripts": "^4.0.2"
+  }
+}

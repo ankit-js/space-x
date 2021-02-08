@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission information component Get Missions data 1`] = `
+<Fragment>
+  <Loader
+    className="loader"
+    color="grey"
+    height={50}
+    style={Object {}}
+    timeout={0}
+    type="TailSpin"
+    visible={true}
+    width={50}
+  />
+</Fragment>
+`;
+
+exports[`Mission information component should render the mission information Component 1`] = `
+<Fragment>
+  <Loader
+    className="loader"
+    color="grey"
+    height={50}
+    style={Object {}}
+    timeout={0}
+    type="TailSpin"
+    visible={true}
+    width={50}
+  />
+</Fragment>
+`;
